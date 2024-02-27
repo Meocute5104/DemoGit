@@ -1,12 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hỗ trợ đổi lớp FPT University</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        form {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #0073b7;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
-    <div>Hehe </div>
-    <div>Wtf cai me gi day</div>
+    <h1>Hỗ trợ đổi lớp FPT University</h1>
+
+    <p>Mỗi môn học muốn đổi tạo một form mới!</p>
+
+    <form action="#">
+        <label for="fullname">Họ và tên:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p>Môn học và lớp hiện tại:</p>
+        <label for="current_class">Lớp:</label>
+        <input type="text" id="current_class" name="current_class" required>
+
+        <label for="current_subject">Môn học:</label>
+        <input type="text" id="current_subject" name="current_subject" required>
+
+        <label for="current_time">Thời gian hiện tại:</label>
+        <input type="text" id="current_time" name="current_time" required>
+
+        <label for="current_slot">Slot hiện tại:</label>
+        <input type="text" id="current_slot" name="current_slot" required>
+
+        <p>Môn học và lớp muốn đổi:</p>
+        <label for="new_class">Lớp:</label>
+        <input type="text" id="new_class" name="new_class">
+
+        <label for="new_subject">Môn học:</label>
+        <input type="text" id="new_subject" name="new_subject">
+
+        <label for="new_time">Thời gian:</label>
+        <input type="text" id="new_time" name="new_time">
+
+        <label for="new_slot">Slot:</label>
+        <input type="text" id="new_slot" name="new_slot">
+
+        <p>Ghi chú:</p>
+        <textarea id="note" name="note" rows="5" cols="50"></textarea>
+
+        <button type="submit">Gửi yêu cầu</button>
+    </form>
 </body>
+
 </html>
