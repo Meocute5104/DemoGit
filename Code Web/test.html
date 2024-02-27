@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .element {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        h1 {
+            color: #000;
+            font-size: 18px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+    </style>
 </head>
+
 <body>
-    <div>meo meo</div>
+    <div class="element">
+        <h1>Tiêu đề</h1>
+        <p>Đây là nội dung element</p>
+    </div>
+
 </body>
+
 </html>

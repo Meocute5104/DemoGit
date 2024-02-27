@@ -9,13 +9,17 @@
         *{
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-        h1 {
+        h1.title{
             font-size: xx-large;
             text-align: left;
             padding-top: 60px;
             padding-left: 75px;
         }
-
+        h1.Information{
+            font-size: xx-large;
+            text-align: left;
+            padding-bottom: 10px;
+        }
         .note{
             padding-top: 20px;
             padding-left: 75px;
@@ -26,13 +30,15 @@
         }
 
         .command1{
+            font-style: italic;
             margin-top: 20px;
         }
         form {
-            width: 500px;
+            width: 700px;
+
             margin: 0 auto;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid rgb(0, 0, 0);
             border-radius: 2dvb ;
         }
 
@@ -58,49 +64,50 @@
 </head>
 
 <body>
-    <h1>FPT University Class Change Support</h1>
+    <h1 class="title">FPT University Class Change Support</h1>
 
-    <p class="note">Mỗi môn học muốn đổi tạo một form mới!</p>
+    <p class="note">Mỗi môn học muốn đổi tạo một form mới! Nếu chỉ muốn đổi lớp thì không cần điền môn học!</p>
 
     <form  action="#">
+        <h1 class="Information">Information form</h1>
         <!-- <div style="display: flex;"> -->
         <label for="fullname">Full name:</label>
         <input type="text" id="fullname" name="fullname" placeholder="Enter your name (required)" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="Enter your @fpt.edu.vn" required>
         <!-- </div> -->
 
         <p class="command1">Current class and subject want to change:</p>
-        <label for="current_class">Lớp:</label>
+        <label for="current_class">Current class:</label>
         <input type="text" id="current_class" name="current_class" required>
 
-        <label for="current_subject">Môn học:</label>
+        <label for="current_subject">Subject:</label>
         <input type="text" id="current_subject" name="current_subject" required>
 
-        <label for="current_time">Thời gian hiện tại:</label>
+        <label for="current_time">Current time:</label>
         <input type="text" id="current_time" name="current_time" required>
 
-        <label for="current_slot">Slot hiện tại:</label>
+        <label for="current_slot">Current slot:</label>
         <input type="text" id="current_slot" name="current_slot" required>
 
-        <p class="command1">Time and slot want to change</p>
-        <label for="new_class">Lớp:</label>
+        <p class="command1">Time and slot want to change:</p>
+        <label for="new_class">Class:</label>
         <input type="text" id="new_class" name="new_class">
 
-        <label for="new_subject">Môn học:</label>
-        <input type="text" id="new_subject" name="new_subject">
+        <!-- <label for="new_subject">Môn học:</label>
+        <input type="text" id="new_subject" name="new_subject"> -->
 
-        <label for="new_time">Thời gian:</label>
+        <label for="new_time">Day:</label>
         <input type="text" id="new_time" name="new_time">
 
         <label for="new_slot">Slot:</label>
         <input type="text" id="new_slot" name="new_slot">
         
-        <p>Ghi chú:</p>
+        <p>Note:</p>
         <textarea id="note" name="note" rows="5" cols="50"></textarea>
 
-        <button type="submit">Gửi yêu cầu</button>
+        <button type="submit">Send request</button>
     </form>
 </body>
 
