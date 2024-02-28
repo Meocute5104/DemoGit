@@ -18,16 +18,14 @@
         <!-- <label for="fullname">Full name:</label>
         <input type="text" id="fullname" name="fullname" placeholder="Enter your name (required)" required> -->
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your @fpt.edu.vn" required>
         <!-- </div> -->
 
         <p class="command1">Your current class and the subject you want to change:</p>
         <label for="current_class">Current class:</label>
-        <input type="text" id="current_class" name="current_class" required>
+        <input type="text" id="current_class" name="current_class" placeholder="Ex: SE1890, AI1924, ... (required)" required>
 
         <label for="current_subject">Subject:</label>
-        <input type="text" id="current_subject" name="current_subject" required>
+        <input type="text" id="current_subject" name="current_subject" placeholder="Ex: MAE101, PRO192, ... (required)" required>
 
         <label for="table1">Current time and slot:</label>
 
@@ -85,7 +83,7 @@
 
         <p class="command1">Time and slot want to change:</p>
         <label for="new_class">Class:</label>
-        <input type="text" id="new_class" name="new_class">
+        <input type="text" id="new_class" name="new_class" placeholder="Ex: GD1880,... (optional)">
 
         <!-- <label for="new_subject">Môn học:</label>
         <input type="text" id="new_subject" name="new_subject"> -->
@@ -145,6 +143,9 @@
 
         <p>Note:</p>
         <textarea id="note" name="note" rows="5" cols="50"></textarea>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your @fpt.edu.vn" required>
 
         <button type="submit">Send request</button>
     </form>

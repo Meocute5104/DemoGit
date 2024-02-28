@@ -33,3 +33,18 @@ checkmeo.forEach(checkboxmeo => {
     });
 });
 
+const emailInput = document.querySelector('#email');
+
+emailInput.addEventListener('input', () => {
+  const email = emailInput.value;
+  const isValidEmail = email.endsWith('@fpt.edu.vn');
+
+  if (!isValidEmail) {
+    emailInput.classList.add('invalid');
+    emailInput.setCustomValidity('Email must have @fpt.edu.vn last');
+  } else {
+    emailInput.classList.remove('invalid');
+    emailInput.setCustomValidity('');
+  }
+});
+
