@@ -10,7 +10,7 @@
 <body>
     <h1 class="title">FPT University Class Change Support</h1>
 
-    <p class="note">Mỗi môn học muốn đổi tạo một form mới! Nếu chỉ muốn đổi lớp thì không cần điền môn học!</p>
+    <p class="note">Mỗi môn học muốn đổi tạo một form mới! Có thể không điền lớp mới muốn chuyển !</p>
 
     <form action="#">
         <h1 class="Information">Information form</h1>
@@ -20,7 +20,7 @@
 
         <!-- </div> -->
 
-        <p class="command1">Your current class and the subject you want to change:</p>
+        <p class="command1">Your current class and the subject you want to change (required):</p>
         <label for="current_class">Current class:</label>
         <input type="text" id="current_class" name="current_class" placeholder="Ex: SE1890, AI1924, ... (required)" required>
 
@@ -88,7 +88,7 @@
         <!-- <label for="new_subject">Môn học:</label>
         <input type="text" id="new_subject" name="new_subject"> -->
 
-        <label for="new_time">Future time and slot:</label>
+        <label for="new_time">Future time and slot (required):</label>
         <table class="new_time">
             <thead>
                 <tr>
@@ -141,8 +141,11 @@
             </tbody>
         </table>
 
-        <p>Note:</p>
-        <textarea id="note" name="note" rows="5" cols="50"></textarea>
+        <!-- <p>Note:</p>
+        <textarea id="note" name="note" rows="5" cols="50"></textarea> -->
+
+        <label for="note">Note:</label>
+        <input type="note" id="your-input" name="note" placeholder="You can note specific requests!">
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Enter your @fpt.edu.vn" required>

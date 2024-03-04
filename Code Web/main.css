@@ -2,17 +2,27 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body {
+    background-image: url(https://image.thanhnien.vn/Uploaded/trinm/2023_01_04/fpthanoi01-130.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 h1.title {
     font-size: xx-large;
     /* text-align: left; */
     padding-top: 60px;
     padding-left: 75px;
 }
-
 h1.Information {
+    background-color: #d7ebf7;
+    border-radius: 1.5dvb;
     font-size: xx-large;
-    text-align: left;
+    text-align: center;
     padding-bottom: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .note {
@@ -30,8 +40,8 @@ p {
 }
 
 form {
+    background-color: rgba(255, 255, 255, 0.85);
     width: 700px;
-
     margin: 0 auto;
     padding: 20px;
     border: 1px solid rgb(0, 0, 0);
@@ -48,13 +58,15 @@ input,
 textarea {
     width: 100%;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #3b3a3a;
 }
 
 button {
-    margin-top: 10px;
-    padding: 5px 10px;
+    margin-top: 20px;
+    margin-left: 40%;
+    padding: 10px 20px;
     background-color: #0073b7;
+    border-radius: 1dvb;
     color: #fff;
 }
 
@@ -65,7 +77,7 @@ table {
 
 th,
 td {
-    border: 1px solid #ddd;
+    border: 1px solid #020202;
     padding: 8px;
     text-align: center;
 }
