@@ -3,20 +3,22 @@
 }
 
 body {
-    background-image: url(https://image.thanhnien.vn/Uploaded/trinm/2023_01_04/fpthanoi01-130.jpg);
+    /* background-image: url(https://image.thanhnien.vn/Uploaded/trinm/2023_01_04/fpthanoi01-130.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background-color: #2d2d2d;
 }
 
 h1.title {
     font-size: xx-large;
     /* text-align: left; */
-    padding-top: 60px;
-    padding-left: 75px;
+    margin-top: 2%;
+    margin-left: 5%;
+    color: #ff4d00;
 }
 h1.Information {
-    background-color: #d7ebf7;
+    background-color: #ff7b00;
     border-radius: 1.5dvb;
     font-size: xx-large;
     text-align: center;
@@ -26,8 +28,10 @@ h1.Information {
 }
 
 .note {
-    padding-top: 20px;
-    padding-left: 75px;
+    margin-top: 1%;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    color: #ffffff;
 }
 
 p {
@@ -39,9 +43,16 @@ p {
     margin-top: 10px;
 }
 
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    margin: 15px auto;
+}
+
 form {
-    background-color: rgba(255, 255, 255, 0.85);
-    width: 700px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 900px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid rgb(0, 0, 0);
@@ -54,8 +65,8 @@ label {
     padding-bottom: 5px;
 }
 
-input,
-textarea {
+input{
+    
     width: 100%;
     padding: 5px;
     border: 1px solid #3b3a3a;
@@ -63,11 +74,16 @@ textarea {
 
 button {
     margin-top: 20px;
-    margin-left: 40%;
+    margin-left: 42%;
+    margin-right: 25%;
     padding: 10px 20px;
-    background-color: #0073b7;
+    background-color: #ff7b00;
     border-radius: 1dvb;
-    color: #fff;
+    color: #000000;
+}
+
+button:hover{
+    background-color: #ff4d00;
 }
 
 table {
@@ -83,11 +99,11 @@ td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #ff7b00;
 }
 
 tbody tr:hover {
-    background-color: #f5f5f5;
+    background-color: #ff7b00;
 }
 
 ::placeholder{
